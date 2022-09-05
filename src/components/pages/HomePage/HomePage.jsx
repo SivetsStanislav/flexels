@@ -1,11 +1,11 @@
 import React from 'react';
-import HomePageHeader from '../../homePageComponents/HomePageHeader/HomePageHeader';
+import './HomePage.scss'
+import HeaderHomePage from '../../homePageComponents/HeaderHomePage/HeaderHomePage';
 
 const HomePage = () => {
     return (
-        <div>
-            I am home page!
-            <HomePageHeader />
+        <div className='homepage'>
+            <HeaderHomePage />
         </div>
     );
 }

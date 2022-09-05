@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import './SearchForm.scss'
 import { useNavigate } from 'react-router-dom';
 import SearchInput from '../searchInput/SearchInput';
+import IconButton from '@mui/material/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
 
 const SearchForm = () => {
     const navigate = useNavigate();
@@ -21,9 +24,21 @@ const SearchForm = () => {
     console.log(search);
 
     return (
-        <form onSubmit={handleSubmit}>
-            <SearchInput type="text" value={search} onChange={(search) => handleSearch(search)} />
-            <input type="submit" value="Поиск" />
+        <form className='search-form' onSubmit={handleSubmit}>
+            <div className='search-form__container'>
+                <SearchInput
+                    type="text"
+                    placeholder='Поиск бесплатных изображений'
+                    value={search}
+                    onChange={(search) => handleSearch(search)}
+                />
+                <IconButton 
+                    className='search-form__button'
+                    type='submit'
+                >
+                    <SearchIcon />
+                </IconButton>
+            </div>
         </form>
     );
 }

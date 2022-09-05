@@ -1,0 +1,37 @@
+.trend-tags {
+    white-space: nowrap;
+    margin-top: 30px;
+
+    .trend-tags__text {
+        display: inline-block;
+        padding: 0px;
+        margin-right: 8px;
+        color: hsla(0,0%,100%,.7);
+        font-weight: 600;
+        font-size: 16px;
+        fill: #fff;
+    }
+
+    .trend-tags__list {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+
+        .trend-tag__container {
+            display: inline-block;
+            list-style: none;
+
+            .trend-tag {
+                font-weight: 600;
+                font-size: 16px;
+                color: #fff;
+                fill: #fff;
+                padding: 0;
+                border: none;
+                outline: none;
+                text-decoration: none;
+            }
+        }
+    }
+}

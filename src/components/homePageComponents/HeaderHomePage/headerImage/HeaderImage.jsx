@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './HeaderImage.scss';
 import { PhotosRepository } from '../../../../dataAccess/photosRepository';
 
 const HeaderImage = () => {
