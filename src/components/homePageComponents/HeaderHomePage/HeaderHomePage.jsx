@@ -5,7 +5,6 @@ import TrendTags from '../TrendTags/TrendTags';
 import HeaderImage from './headerImage/HeaderImage';
 
 const HeaderHomePage = () => {
-
     return (
         <div className='header-home-page'>
             <HeaderImage />
