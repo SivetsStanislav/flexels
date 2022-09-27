@@ -10,8 +10,8 @@ export class PhotosRepository {
         return `${this.#baseUrl}/${urlPath}`;
     }
 
-    static async getSearchingPhotos(query) {
-        const url = this.#formUrl(`search?query=${query.query}`);
+    static async getSearchingPhotos(query, page) {
+        const url = this.#formUrl(`search?query=${query.query}&page=${page}&per_page=15`);
         const response = await this.#apiClient.get(url);
         const { photos } = response.data;
 
