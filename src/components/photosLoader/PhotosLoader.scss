@@ -1,0 +1,13 @@
+.photos-loader__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .loaded-img {
+        padding-top: 30px;
+        height: 400px;
+        width: 250px;
+    }
+}
