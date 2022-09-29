@@ -41,12 +41,14 @@ const PhotosLoader = (props) => {
     return (
         <div className='photos-loader__container'>
             {photos.map(photo =>
+            <div className='photo' key={photo.id}>
                 <img
-                    key={photo.id}
                     src={photo.src.medium}
                     alt={photo.alt}
                     className='loaded-img'
                 />
+                <a href={photo.photographer_url}>{photo.photographer}</a>
+            </div>
             )}
         </div>
     );
